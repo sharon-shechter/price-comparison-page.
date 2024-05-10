@@ -1,0 +1,98 @@
+.homeSection {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #6fb1fc, #4364f7, #0056b3);
+    color: #ffffff;
+}
+
+.intro {
+    margin-top: 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.description {
+    margin: 20px auto;
+    width: 50%;
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+    width: 100%; 
+    max-width: 500px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.input {
+    flex: 1;
+    padding: 12px 15px;
+    margin-right: 8px;
+    font-size: 1.1em;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+}
+
+.input:focus {
+    border-color: #a4c2f4;
+    box-shadow: 0 0 0 2px #a4c2f4;
+}
+
+.button {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-left: 8px;
+}
+
+.button:first-child {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.button:last-child {
+    margin-left: 8px;
+}
+
+.input, .button {
+    flex: 1 0 auto;
+}
+
+.button:hover, .button:focus {
+    background-color: #f8f8f8;
+    border-color: #a4c2f4;
+}
+
+@media (max-width: 768px) {
+    .description {
+        width: 80%;
+    }
+
+    .searchForm {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .input {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}

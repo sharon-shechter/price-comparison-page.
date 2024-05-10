@@ -1,0 +1,82 @@
+/* about.module.css */
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.universityLogo {
+  width: 150px; /* Set width of the logo */
+  height: 150px; /* Set height to be the same as the width to maintain a perfect circle */
+  border-radius: 50%; /* Makes the image round */
+  border: 2px solid #ddd; /* Adds a light grey border around the image */
+  padding: 5px; /* Optional: adds space between the image and the border */
+  margin-bottom: 20px; /* Space below the logo */
+  object-fit: cover;
+}
+
+.studentInfo {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.student {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.student img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.studentName {
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.studentDescription {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.projectInfo {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.projectTitle {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.projectText {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
