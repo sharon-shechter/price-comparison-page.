@@ -11,10 +11,6 @@ export default function Home() {
         event.preventDefault();
         await router.push(`/results?query=${encodeURIComponent(query)}`);
     };
-     const handleSearchSimilar = async (event) => {
-        event.preventDefault();
-        await router.push(`/results?query=${encodeURIComponent(query)}&similar=true`);
-    };
 
     return (
         <div className={styles.homeSection}>
@@ -33,8 +29,6 @@ export default function Home() {
                         className={styles.input}
                     />
                     <button type="submit" className={styles.button}>Search</button>
-                    <button type="button" onClick={handleSearchSimilar} className={styles.button}>Search Similar
-                    </button>
                 </form>
             </div>
         </div>

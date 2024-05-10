@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import json
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
-from openai import OpenAI
 import asyncio
 
 app = FastAPI()
@@ -17,29 +16,8 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
 )
-client = OpenAI(
-    api_key=  PUT_HERE_YOUR_API_KEY
-)
 
 
-@app.get("/search_similar/{product_name}")
-async def search_similar_items(product_name: str):
-
-    prompt = f"give me 5 similar items to {product_name} in a json format where number is the key and the value is the item name"
-    try:
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a book summarization AI."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.2
-        )
-        items = json.loads(response.choices[0].message.content)
-        results = await asyncio.gather(*(search_all_sites(item) for item in items.values()))
-        return results, 200
-    except Exception as e:
-        raise f"Unable to connect to chat-gpt API - {str(e)}"
 
 
 @app.get("/search/{product_name}")
@@ -130,7 +108,6 @@ async def search_newegg(product_name: str):
 
 
 async def main():
-    # Testing or other logic can be added here if necessary
 
     # Start the FastAPI app
     uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
