@@ -32,7 +32,22 @@ The API will be available at http://127.0.0.1:8000 after you start uvicorn.
 3. npm run dev
 This command will start the Next.js development server at http://localhost:3000.
 
-### Open your web browser and visit http://localhost:3000 to access the SHASHA - BUY application.
+## Open your web browser and visit http://localhost:3000 to access the SHASHA - BUY application.
+
+## Accessing the Advanced Search Feature
+A specific version of SHASHA - BUY includes the ability to search for similar items using OpenAI's API. To access this feature, you need to check out the specific commit:
+git checkout 2ec09623eb6bdcf89a73808dfb73bd136804e4ce
+### Configuring the OpenAI API Key
+To use the similar item search feature, you must obtain an API key from OpenAI. Once you have your API key, insert it into the designated place in the `fetch_data.py` file:
+
+- Open `fetch_data.py`
+- Locate the line `put here your api key`
+- Replace `put here your api key` with your actual OpenAI API key
+
+## Running the Application
+To run the SHASHA - BUY application, you need to start both the Next.js frontend server and the FastAPI backend server for fetching data.
+
+
 
 ## Usage
 Once the application is running, you can use the search form on the home page to enter an item name and search for the best deals across different websites. The application will fetch the prices from various websites and display the results on the search results page.
