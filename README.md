@@ -68,7 +68,7 @@ Join us in improving SHASHA - BUY and making shopping more enjoyable and efficie
 The SHASHA - BUY project is licensed under the MIT License. This license permits anyone to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided the original copyright and license notice are included in all copies or substantial portions of the software. See the LICENSE file in the repository for full details.
 
 # Contact
-If you have any questions, feedback, or suggestions about the SHASHA - BUY project, please don't hesitate to reach out to us. You can contact us at [email protected]. We look forward to hearing from you and welcome your input on making SHASHA - BUY even better.
+If you have any questions, feedback, or suggestions about the SHASHA - BUY project, please don't hesitate to reach out to us. We look forward to hearing from you and welcome your input on making SHASHA - BUY even better.
 
 Happy shopping! Let's make finding the best deals online easier and more fun for everyone!
 
