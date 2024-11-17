@@ -14,6 +14,13 @@ Before getting started, make sure you have the following software installed on y
 - Python (version 3.6 or higher)
 - pip (Python package installer)
 
+## Demo 
+
+
+https://github.com/user-attachments/assets/207dc476-5ea5-4e4d-b815-a2cd4eba7ec2
+
+
+
 ## Installation
 
 1. Clone the repository to your local machine using git clone. 
